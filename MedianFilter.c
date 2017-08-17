@@ -114,7 +114,7 @@ int main(void)
     {
         printf("Please enter suitable window size: ");
         scanf("%d",&window_size);
-    }while((window_size >= size) || ((window_size/2) == 0));
+    }while((window_size >= size) || ((window_size%2) == 0));
 
     /* read input buffer and prepare the output buffer */   
     read_buffer(size);
